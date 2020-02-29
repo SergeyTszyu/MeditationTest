@@ -1,0 +1,6 @@
+module Pods_MeditationTestProject {
+  umbrella header "Pods-MeditationTestProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

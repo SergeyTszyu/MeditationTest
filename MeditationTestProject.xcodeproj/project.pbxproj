@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BB88081B2402D32000DEC0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88081A2402D32000DEC0E8 /* AppDelegate.swift */; };
-		BB88081D2402D32100DEC0E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88081C2402D32100DEC0E8 /* SceneDelegate.swift */; };
-		BB88081F2402D32100DEC0E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88081E2402D32100DEC0E8 /* ContentView.swift */; };
 		BB8808212402D32400DEC0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8808202402D32400DEC0E8 /* Assets.xcassets */; };
 		BB8808242402D32400DEC0E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8808232402D32400DEC0E8 /* Preview Assets.xcassets */; };
 		BB8808272402D32400DEC0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8808252402D32400DEC0E8 /* LaunchScreen.storyboard */; };
 		BB8808322402D32500DEC0E8 /* MeditationTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8808312402D32500DEC0E8 /* MeditationTestProjectTests.swift */; };
 		BB88083D2402D32500DEC0E8 /* MeditationTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88083C2402D32500DEC0E8 /* MeditationTestProjectUITests.swift */; };
+		BB8808512402D3E500DEC0E8 /* Meditation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8808502402D3E500DEC0E8 /* Meditation.storyboard */; };
+		BB8808532402D3FA00DEC0E8 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8808522402D3FA00DEC0E8 /* MeditationViewController.swift */; };
+		BB8808552402F47000DEC0E8 /* MeditationTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8808542402F47000DEC0E8 /* MeditationTimerViewController.swift */; };
+		BB88085B2402F8B000DEC0E8 /* UIView+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88085A2402F8B000DEC0E8 /* UIView+Inspectable.swift */; };
+		BB88085E2403033300DEC0E8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88085D2403033300DEC0E8 /* R.generated.swift */; };
+		BB8808602403077D00DEC0E8 /* MeditationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88085F2403077D00DEC0E8 /* MeditationSession.swift */; };
+		BB88086424030B8E00DEC0E8 /* MeditationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88086324030B8E00DEC0E8 /* MeditationManager.swift */; };
+		FDD680CD8F93261325FCCB63 /* libPods-MeditationTestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D286D8188461353D23C5D8D2 /* libPods-MeditationTestProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93F525841FD7D72F8C222A03 /* Pods-MeditationTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationTestProject.debug.xcconfig"; path = "Target Support Files/Pods-MeditationTestProject/Pods-MeditationTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		ABAED108BB52612FD45EEA8E /* Pods-MeditationTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationTestProject.release.xcconfig"; path = "Target Support Files/Pods-MeditationTestProject/Pods-MeditationTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		BB8808172402D32000DEC0E8 /* MeditationTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB88081A2402D32000DEC0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB88081C2402D32100DEC0E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB88081E2402D32100DEC0E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB8808202402D32400DEC0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB8808232402D32400DEC0E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB8808262402D32400DEC0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		BB8808382402D32500DEC0E8 /* MeditationTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditationTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB88083C2402D32500DEC0E8 /* MeditationTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationTestProjectUITests.swift; sourceTree = "<group>"; };
 		BB88083E2402D32500DEC0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8808502402D3E500DEC0E8 /* Meditation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meditation.storyboard; sourceTree = "<group>"; };
+		BB8808522402D3FA00DEC0E8 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		BB8808542402F47000DEC0E8 /* MeditationTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationTimerViewController.swift; sourceTree = "<group>"; };
+		BB88085A2402F8B000DEC0E8 /* UIView+Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectable.swift"; sourceTree = "<group>"; };
+		BB88085D2403033300DEC0E8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		BB88085F2403077D00DEC0E8 /* MeditationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSession.swift; sourceTree = "<group>"; };
+		BB88086324030B8E00DEC0E8 /* MeditationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationManager.swift; sourceTree = "<group>"; };
+		D286D8188461353D23C5D8D2 /* libPods-MeditationTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeditationTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD680CD8F93261325FCCB63 /* libPods-MeditationTestProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0384C75C0D864C6579BB4842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93F525841FD7D72F8C222A03 /* Pods-MeditationTestProject.debug.xcconfig */,
+				ABAED108BB52612FD45EEA8E /* Pods-MeditationTestProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C9765839A18AB8E93DB02E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D286D8188461353D23C5D8D2 /* libPods-MeditationTestProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB88080E2402D32000DEC0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				BB8808302402D32500DEC0E8 /* MeditationTestProjectTests */,
 				BB88083B2402D32500DEC0E8 /* MeditationTestProjectUITests */,
 				BB8808182402D32000DEC0E8 /* Products */,
+				0384C75C0D864C6579BB4842 /* Pods */,
+				4C9765839A18AB8E93DB02E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +133,12 @@
 		BB8808192402D32000DEC0E8 /* MeditationTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				BB8808562402F88500DEC0E8 /* Common */,
+				BB88084A2402D36F00DEC0E8 /* Buisness */,
 				BB88081A2402D32000DEC0E8 /* AppDelegate.swift */,
-				BB88081C2402D32100DEC0E8 /* SceneDelegate.swift */,
-				BB88081E2402D32100DEC0E8 /* ContentView.swift */,
 				BB8808202402D32400DEC0E8 /* Assets.xcassets */,
 				BB8808252402D32400DEC0E8 /* LaunchScreen.storyboard */,
+				BB88085D2403033300DEC0E8 /* R.generated.swift */,
 				BB8808282402D32400DEC0E8 /* Info.plist */,
 				BB8808222402D32400DEC0E8 /* Preview Content */,
 			);
@@ -136,6 +171,106 @@
 			path = MeditationTestProjectUITests;
 			sourceTree = "<group>";
 		};
+		BB88084A2402D36F00DEC0E8 /* Buisness */ = {
+			isa = PBXGroup;
+			children = (
+				BB88084B2402D39200DEC0E8 /* Meditation */,
+			);
+			path = Buisness;
+			sourceTree = "<group>";
+		};
+		BB88084B2402D39200DEC0E8 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				BB88084F2402D3AA00DEC0E8 /* Model */,
+				BB88084E2402D3A500DEC0E8 /* Views */,
+				BB88084D2402D39F00DEC0E8 /* Controller */,
+				BB88084C2402D39900DEC0E8 /* Storyboard */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		BB88084C2402D39900DEC0E8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BB8808502402D3E500DEC0E8 /* Meditation.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BB88084D2402D39F00DEC0E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB8808522402D3FA00DEC0E8 /* MeditationViewController.swift */,
+				BB8808542402F47000DEC0E8 /* MeditationTimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB88084E2402D3A500DEC0E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB88084F2402D3AA00DEC0E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB88085F2403077D00DEC0E8 /* MeditationSession.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB8808562402F88500DEC0E8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BB88086124030B7300DEC0E8 /* Managers */,
+				BB8808572402F88800DEC0E8 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BB8808572402F88800DEC0E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB8808582402F88E00DEC0E8 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB8808582402F88E00DEC0E8 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BB8808592402F8A700DEC0E8 /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		BB8808592402F8A700DEC0E8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				BB88085A2402F8B000DEC0E8 /* UIView+Inspectable.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		BB88086124030B7300DEC0E8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BB88086224030B7800DEC0E8 /* MeditationManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BB88086224030B7800DEC0E8 /* MeditationManager */ = {
+			isa = PBXGroup;
+			children = (
+				BB88086324030B8E00DEC0E8 /* MeditationManager.swift */,
+			);
+			path = MeditationManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB8808412402D32500DEC0E8 /* Build configuration list for PBXNativeTarget "MeditationTestProject" */;
 			buildPhases = (
+				BCA5D01EA7FD18C5CF1234DB /* [CP] Check Pods Manifest.lock */,
+				BB88085C2403028500DEC0E8 /* R.swift */,
 				BB8808132402D32000DEC0E8 /* Sources */,
 				BB8808142402D32000DEC0E8 /* Frameworks */,
 				BB8808152402D32000DEC0E8 /* Resources */,
+				A095AAB33FDC4EDF6E4DDACC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +380,7 @@
 			files = (
 				BB8808272402D32400DEC0E8 /* LaunchScreen.storyboard in Resources */,
 				BB8808242402D32400DEC0E8 /* Preview Assets.xcassets in Resources */,
+				BB8808512402D3E500DEC0E8 /* Meditation.storyboard in Resources */,
 				BB8808212402D32400DEC0E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,14 +401,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A095AAB33FDC4EDF6E4DDACC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeditationTestProject/Pods-MeditationTestProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeditationTestProject/Pods-MeditationTestProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeditationTestProject/Pods-MeditationTestProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB88085C2403028500DEC0E8 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		BCA5D01EA7FD18C5CF1234DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeditationTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB8808132402D32000DEC0E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BB88081B2402D32000DEC0E8 /* AppDelegate.swift in Sources */,
-				BB88081D2402D32100DEC0E8 /* SceneDelegate.swift in Sources */,
-				BB88081F2402D32100DEC0E8 /* ContentView.swift in Sources */,
+				BB88085B2402F8B000DEC0E8 /* UIView+Inspectable.swift in Sources */,
+				BB88085E2403033300DEC0E8 /* R.generated.swift in Sources */,
+				BB8808532402D3FA00DEC0E8 /* MeditationViewController.swift in Sources */,
+				BB8808602403077D00DEC0E8 /* MeditationSession.swift in Sources */,
+				BB8808552402F47000DEC0E8 /* MeditationTimerViewController.swift in Sources */,
+				BB88086424030B8E00DEC0E8 /* MeditationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +637,7 @@
 		};
 		BB8808422402D32500DEC0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F525841FD7D72F8C222A03 /* Pods-MeditationTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +645,7 @@
 				DEVELOPMENT_TEAM = K2V5DYJ2C2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MeditationTestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +659,7 @@
 		};
 		BB8808432402D32500DEC0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABAED108BB52612FD45EEA8E /* Pods-MeditationTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +667,7 @@
 				DEVELOPMENT_TEAM = K2V5DYJ2C2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MeditationTestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,23 +8,51 @@
 
 import UIKit
 
-class MeditationTimerViewController: UIViewController {
-
+final class MeditationTimerViewController: UIViewController {
+    
+    // MARK: - @IBOutlets
+    
+    @IBOutlet private weak var timePickerView: UIPickerView!
+    
+    // MARK: - Properties
+    
+    fileprivate let dataSource = [1, 3, 5, 8, 10]
+    
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+}
 
-        // Do any additional setup after loading the view.
+// MARK: Private
+
+private extension MeditationTimerViewController {
+    
+    @IBAction func nextAction(_ sender: UIButton) {
+        let meditationViewController = R.storyboard.meditation.meditationViewController()!
+        navigationController?.pushViewController(meditationViewController, animated: true)
+    }
+}
+
+extension MeditationTimerViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return dataSource.count
     }
-    */
-
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let stringValue = "\(dataSource[row])"
+        return stringValue
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let time = dataSource[row]
+        MeditationSession.MeditationDuration = time * 60
+    }
 }
